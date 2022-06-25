@@ -87,7 +87,9 @@ public class Venta {
 
     @Override
     public String toString() {
-        return "idPanel= " + idPanel + "\n fechaVenta= " + fechaVenta + "\n tipoDocumentoComprador= " + tipoDocumentoComprador + "\n idComprador= " + idComprador + "\n nombreComprador= " + nombreComprador + "\n descripcionUso= " + descripcionUso;
+        return "idPanel= " + idPanel + "\n fechaVenta= " + fechaVenta + "\n tipoDocumentoComprador= " 
+                + tipoDocumentoComprador + "\n idComprador= " + idComprador + "\n nombreComprador= " 
+                + nombreComprador + "\n descripcionUso= " + descripcionUso + " \n total dias venta= " + calcularDias();
     }
     
 

@@ -3,6 +3,7 @@ package co.edu.udea.reto4;
 import static co.edu.udea.reto4.Reto4.scanner;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 /**
@@ -74,9 +75,9 @@ public class Empresa {
         System.out.println("Ingrese nombre de la empresa");
         seguro.setNombreEmpresa(scanner.next());
         System.out.println("ingrese fecha inicio");
-        seguro.setFechaInicio(LocalDate.parse(scanner.next()));
+        seguro.setFechaInicio(LocalDate.parse(scanner.next(),DateTimeFormatter.ISO_LOCAL_DATE));
         System.out.println("Ingrese fecha fin");
-        seguro.setFechaFin(LocalDate.parse(scanner.next()));
+        seguro.setFechaFin(LocalDate.parse(scanner.next(),DateTimeFormatter.ISO_LOCAL_DATE));
         System.out.println("Ingrese descripcion");
         seguro.setDescripcion(scanner.next());
         System.out.println("Ingrese id del panel");

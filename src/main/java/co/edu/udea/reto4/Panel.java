@@ -85,7 +85,8 @@ public class Panel {
 
     @Override
     public String toString() {
-        return "id= " + id + "\n serie= " + serie + "\n descripcion= " + descripcion + "\n tipo= " + tipo + "\n modelo= " + modelo + "\n anioFabricacion= " + anioFabricacion + "\n precioVenta= " + precioVenta ;
+        return "id= " + id + "\n serie= " + serie + "\n descripcion= " + descripcion + "\n tipo= " + tipo + "\n modelo= " + modelo + "\n anioFabricacion= " + anioFabricacion + 
+                "\n precioVenta= " + precioVenta + " \n uso = " + calcularUso();
     }
     
     
